@@ -3,5 +3,5 @@ import java.nio.file.Path
 
 case class GitRepo(
     path: Path,
-    dirty: Boolean
+    dirty: Boolean = false
 )

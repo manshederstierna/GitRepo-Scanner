@@ -1,1 +1,1 @@
-package reposcanner;
+package reposcanner

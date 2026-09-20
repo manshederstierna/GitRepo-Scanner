@@ -14,7 +14,7 @@ object RepoScanner:
 		sfv = new SimpleFileVisitor[Path]:
 			override def preVisitDirectory(dir: Path, attrs: BasicFileAttributes): FileVisitResult = 
 				val gitPath = dir.resolve(".git")
-				if(Files.exists(gitPath)) then repos +=(GitRepo(dir, false))
+				if(Files.exists(gitPath)) then repos +=(GitRepo(dir))
 				FileVisitResult.CONTINUE
 				
 			override def visitFileFailed(
