@@ -50,11 +50,13 @@ def createContent(): VBox =
 		
 def createQuitButton(): Button =
 	new Button("Quit"):
+		style = "-fx-background-color: #ff0000; -fx-text-fill: white;"
 		onAction = _ =>
 			System.exit(0)
 			
 def createScanButton(): Button = 
 	new Button("Scan for git repositories"):
+		style = "-fx-background-color: #ff0000; -fx-text-fill: white;"
 		onAction = _ =>
 			scan_repos()
 			
